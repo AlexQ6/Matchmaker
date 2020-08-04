@@ -108,6 +108,7 @@ A listing belongs_to a user, a user has_many listings.
 
 | Feature | Description | Expected Outcome | Actual Outcome | Sidenote |
 | ------ | ------ | ------- | ------- | ------ |
+| Testing heroku connection |
 | Create user | A new user is added to the database | New entry is generated in user database|  | None 
 | User sign in  | An existing user signs into app | sign in confirmation appears and directed to dashboard|  | None 
 | profile restriction | Site visitor is prohibited from seeing a user dashboard | site visitor is redirected to log in if user routes is entered|  | None 

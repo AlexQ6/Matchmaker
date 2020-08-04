@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  level: 1
+  price: 1.5
+  term: 1
+  time: MyString
+  location: MyString
+  coach: one
+
+two:
+  description: MyText
+  level: 1
+  price: 1.5
+  term: 1
+  time: MyString
+  location: MyString
+  coach: two
