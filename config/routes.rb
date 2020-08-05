@@ -8,6 +8,14 @@ Rails.application.routes.draw do
   resources :listings
   resources :coaches
 
-  get '/users/profile', to: 'users#show', as: "profile"
+  # profile page routes
+
+  get '/users/:id', to: 'users#show', as: "profile"
+
+  # delete "users/:id", to: "users#delete"
+
+  # get "/users/:id/edit", to:"users#edit", as: "edit_user"
+
+  # patch "/users/:id", to:"users#update"
   
 end

@@ -1,8 +1,9 @@
 class ListingsController < ApplicationController
+  before_action :set_listing, only: [:show, :edit, :update, :delete]
   before_action :authenticate_user!
 
   def index
-    @all = Listings.all
+    @all = Listing.all
 
   end
 
@@ -16,5 +17,5 @@ class ListingsController < ApplicationController
   def set_listing
     @listing = Listing.find(params[:id])
   end
-  
+
 end
