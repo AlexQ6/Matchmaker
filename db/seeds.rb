@@ -9,3 +9,4 @@
     User.create!([{ email: "user1@user.com", password: "123456" }])
     User.create!([{ email: "user2@user.com", password: "123456" }])
     User.create!([{ email: "user3@user.com", password: "123456" }])
+    
