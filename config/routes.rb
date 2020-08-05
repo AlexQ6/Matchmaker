@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   resources :listings
   resources :coaches
 
-  get 'user/profile', to: 'user#show'
+  get '/users/profile', to: 'users#show', as: "profile"
   
 end
