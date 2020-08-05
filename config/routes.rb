@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   
   resources :listings
   resources :coaches
+
+  get 'user/profile', to: 'user#show'
   
 end
