@@ -3,5 +3,11 @@
 <% @all.each do |listing| %>
   <%=listing.title%>
   <%=listing.description%>
+    <% if listing.picture.attached?%>
+    <%= image_tag listing.picture, class: "img_btn"%>
+  <% end %>
+
+    <%= link_to 'View', listing_path(listing) %>
+  <br><br>
 
 <% end %>

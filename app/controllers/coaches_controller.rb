@@ -16,9 +16,10 @@ class CoachesController < ApplicationController
   end
 
   def create
-    @coach = Coach.create(strongparams)
-    @coach.user = current_user
-    redirect_to coaches_path(current_user)
+    @coach = Coach.new(strongparams)
+    @coach.save
+    # @coach.user = current_user
+    redirect_to coach_path(current_user)
   end
   
 
