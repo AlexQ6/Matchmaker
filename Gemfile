@@ -58,3 +58,4 @@ gem "devise", "~> 4.7"
 gem 'cancancan'
 
 gem 'rolify'
+gem "aws-sdk-s3", "~> 1.76"

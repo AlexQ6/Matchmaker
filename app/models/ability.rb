@@ -10,7 +10,7 @@ class Ability
       if user.coach?
         can :manage, Listing, user_id: user.id    
       else
-        can :read, Listing, user_id: user.id
+        can :read, Listing, :manage, User, user_id: user.id
   end
     #
     # The first argument to `can` is the action you are giving the user

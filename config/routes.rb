@@ -1,16 +1,21 @@
 Rails.application.routes.draw do
-  get 'home/page'
-  devise_for :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  
+  get 'coaches/index'
+  get 'coaches/show'
+  get 'coaches/edit'
+  # devise_for :users
+  devise_for :users, controllers: { sessions: 'users/sessions' }
+  # Home page route
   root 'home#page' 
+  get 'home/page'
 
   
   resources :listings
   resources :coaches
 
-  # profile page routes
-
+  # profile page route
   get '/users/profile', to: 'users#show', as: "profile"
 
+  
   
 end

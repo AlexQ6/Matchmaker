@@ -98,7 +98,9 @@ A listing has_many transactions, a transaction belongs_to a listing.
 A listing belongs_to a user, a user has_many listings.
 
 ## Third party services
+- AWS s3
 
+- Stripe
 
 ## Sitemap
 
@@ -114,3 +116,4 @@ A listing belongs_to a user, a user has_many listings.
 | profile restriction | Site visitor is prohibited from seeing a user dashboard | site visitor is redirected to log in if user routes is entered|  | None 
 | Coach restriction | User cannot see coach features until user applys as a coach | site visitor is redirected to coach sign up page|  | None 
 | Edit and delete user profile(includes change password) |
+| Image upload |

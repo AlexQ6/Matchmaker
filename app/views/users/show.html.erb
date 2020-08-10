@@ -2,4 +2,8 @@
 
 <%= current_user.email %>
 
-<%= link_to "Edit profile details", edit_user_registration_path %>
+<%= link_to "Edit profile details", edit_user_registration_path(current_user) %>
+
+<%= image_tag current_user.picture if current_user.picture.attached? %>
+
+<%= link_to "Apply as a coach", new_coach_path(current_user)%>
