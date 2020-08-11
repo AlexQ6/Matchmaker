@@ -1,6 +1,7 @@
 # Matchmaker
 
 https://github.com/AlexQ6/Matchmaker
+
 https://mysterious-refuge-14245.herokuapp.com/
 
 Match maker is an Australian based online platform which eases the the process of finding coaching for tennis players. With its simple ui and intuitiveness, coaching clinics, academies and independents has a brand new avenue to expand their business operations.
@@ -51,8 +52,8 @@ Tennis players of all levels capabilities who are looking for a professional/org
 
 ## wireframes
 
-| ![wf](readme_img/wireframes1.png) | ![wf](readme_img/wireframes2.png) | ![wf](readme_img/wireframes3.png) | ![wf](readme_img/wireframes4.png) |
-| ![wf](readme_img/wireframes5.png) | ![wf](readme_img/wireframes6.png) | ![wf](readme_img/wireframes7.png) | ![wf](readme_img/wireframes8.png) |
+| ![wf](readme_img/wireframe1.png) | ![wf](readme_img/wireframe2.png) | ![wf](readme_img/wireframe3.png) | ![wf](readme_img/wireframe4.png) |
+| ![wf](readme_img/wireframe5.png) | ![wf](readme_img/wireframe6.png) | ![wf](readme_img/wireframe7.png) | ![wf](readme_img/wireframe8.png) |
 
 ## User Stories
 
