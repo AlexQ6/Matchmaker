@@ -1,13 +1,14 @@
 <h1>All listings</h1>
 
-<% @all.each do |listing| %>
+<%# show all listings individually and add view link%>
+<% @listings.each do |listing| %>
   <%=listing.title%>
   <%=listing.description%>
     <% if listing.picture.attached?%>
-    <%= image_tag listing.picture, class: "img_btn"%>
+    <%= image_tag listing.picture, width: 250, class: "img_btn"%>
   <% end %>
 
-    <%= link_to 'View', listing_path(listing) %>
+    <%= link_to 'View', coach_listing_path(listing.coach_id, listing) %>
   <br><br>
 
 <% end %>

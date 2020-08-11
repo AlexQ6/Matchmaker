@@ -1,6 +1,6 @@
 class Coach < ApplicationRecord
-  belongs_to :user
-  after_create :default_role 
+  
+  # after_create :default_role 
 
   private 
   def default_role

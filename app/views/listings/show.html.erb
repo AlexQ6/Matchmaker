@@ -3,3 +3,8 @@
 <%= @listing.title %>
 <%= @listing.description%>
 
+<p><%= image_tag(@listing.picture, width: 250) if @listing.picture.attached? %></p>
+<% if current_user.coach_id == @listing.coach.user_id%>
+  <%= link_to "edit", edit_coach_listing_path(@listing.id)  %>
+<% end %>
+

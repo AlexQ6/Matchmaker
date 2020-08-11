@@ -6,7 +6,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_one_attached :picture
+  has_one :coach, dependent: :destroy
+  
   after_create :default_role 
+  
 
   private 
   def default_role

@@ -1,4 +1,7 @@
-<h1>Coaches#edit</h1>
-<p>Find me in app/views/coaches/edit.html.erb</p>
+<h1>Edit Listing</h1>
 
 <%= render 'form', coach: @coach%>
+
+<% if :authorize %>
+  <%= link_to "Delete coach profile", coach_path, method: "delete", data: {confirm: "Are you sure?"}%>
+<% end %>

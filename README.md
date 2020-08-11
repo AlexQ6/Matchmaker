@@ -56,8 +56,6 @@ Nice to have--
   - edit and delete a listing
   - view my current listing
 
-favourites??
-
 ### Bookings
 
 - As a logged in user I want to be able to
@@ -69,9 +67,6 @@ favourites??
 - As a logged in coach I want to be able to
   - sell my coaching program
   - see a list of people who have purchased my program
-  - set a limit on how many people can purchase and have the listing automatically close when it hits the limit???
-  - 
-
 
 ### Authentication & Authorisation
 
@@ -98,7 +93,9 @@ A listing has_many transactions, a transaction belongs_to a listing.
 A listing belongs_to a user, a user has_many listings.
 
 ## Third party services
-- AWS s3
+
+- Amazon S3
+  - The Amazon S3 service provides a cloud storage solution for static files and images. In case of this app, 
 
 - Stripe
 

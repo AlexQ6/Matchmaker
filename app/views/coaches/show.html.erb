@@ -1,5 +1,8 @@
-<h1>Coaches#show</h1>
-<p>Find me in app/views/coaches/show.html.erb</p>
+<h1>Your Coach</h1>
 
 <%= @coach.business_name%>
 <%= @coach.bio%>
+
+<% if :authorize_coach %>
+  <%= link_to "Edit your coach ", edit_coach_path(@coach)%>
+<% end %>

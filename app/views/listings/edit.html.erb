@@ -1,1 +1,11 @@
 <%= render 'form', listing: @listing%>
+
+<% if :authorize %>
+  <%= link_to "Delete Listing", coach_listing_path, method: "delete", data: {confirm: "Are you sure?"}%>
+<% end %>
+
+<section >
+<%= link_to 'Home', root_path %>
+<p> | </p>
+<%= link_to 'Cancel Edit', @listing %>
+</section>

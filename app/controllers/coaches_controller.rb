@@ -10,16 +10,22 @@ class CoachesController < ApplicationController
   end
 
   def new
-    @coach = Coach.new
-    current_user.add_role :coach
+    pp params
+    pp current_user
+    pp @coach = Coach.new
+    # current_user.add_role :coach
+    pp params
     
   end
 
   def create
-    @coach = Coach.new(strongparams)
+    
+    pp @coach = Coach.new(strongparams)
+    pp params
+    @coach.user_id = current_user
     @coach.save
-    # @coach.user = current_user
-    redirect_to coach_path(current_user)
+    
+    redirect_to coach_path(@coach)
   end
   
 

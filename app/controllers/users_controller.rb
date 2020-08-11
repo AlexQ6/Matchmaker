@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     puts "show method here"
     pp current_user
     pp params
-    @coach = Coach.new
+    
     
   end
 

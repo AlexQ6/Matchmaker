@@ -11,13 +11,16 @@
 
   <body>  
     <% if user_signed_in? %>
-      <%= link_to "logout", destroy_user_session_path, method: :delete %>
-      
+      <%= link_to "logout", destroy_user_session_path, method:"delete" %>
       <%= link_to "profile", profile_path %>
     <% else %>
       <%= link_to "login", new_user_session_path %>
     <% end %>
-    <%= link_to "all listings", listings_path%>
+      <%= link_to "All listings", root_path %>
+    <% flash.each do |key, message| %>
+      <div><%= message %></div>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
