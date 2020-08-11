@@ -3,6 +3,7 @@
 <%= @coach.business_name%>
 <%= @coach.bio%>
 
+<%# only the coach displayed is allowed to edit this page%>
 <% if :authorize_coach %>
   <%= link_to "Edit your coach ", edit_coach_path(@coach)%>
 <% end %>

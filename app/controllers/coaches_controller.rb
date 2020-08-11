@@ -1,27 +1,22 @@
 class CoachesController < ApplicationController
+  # set @coach as current coach as received by params in the following methods
   before_action :find_coach, only: [:show, :edit, :update, :delete]
 
   def index
   end
 
   
-
   def show
   end
 
   def new
-    pp params
-    pp current_user
-    pp @coach = Coach.new
-    # current_user.add_role :coach
-    pp params
-    
+    @coach = Coach.new
   end
 
   def create
-    
-    pp @coach = Coach.new(strongparams)
-    pp params
+    # Create new coach with strong params private methods
+    @coach = Coach.new(strongparams)
+    # set user id foreign of new coach to current user
     @coach.user_id = current_user
     @coach.save
     

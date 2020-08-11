@@ -1,4 +1,4 @@
-<%# <%= form_with(model: coach @listing, local: true) do |form| %>
+
 <%= form_with(model: @listing, url: create_listing_path(@coach)) do |form| %>
     <div class="field">
         <%= form.label :title %>

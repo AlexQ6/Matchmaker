@@ -2,6 +2,12 @@
 
 <%= render 'form', coach: @coach%>
 
-<% if :authorize %>
-  <%= link_to "Delete coach profile", coach_path, method: "delete", data: {confirm: "Are you sure?"}%>
-<% end %>
+<%# Delete coach link with confirmation%>
+<%= link_to "Delete coach profile", coach_path, method: "delete", data: {confirm: "Are you sure?"}%>
+
+
+<section >
+<%= link_to 'Home', root_path %>
+<p> | </p>
+<%= link_to 'Cancel Edit', @coach %>
+</section>
